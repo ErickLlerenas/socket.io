@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket.io</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+              
+</head>
+<body class="container">
+    <section class="container z-depth-3">
+    <h4 class="center-align grey-text">Chat Socket.io</h4>
+    <div id="output"></div>
+    <input type="text" id="username" placeholder="User name">
+    <input type="text" id="message" placeholder="Enter Message...">
+    <button class="btn waves-effect waves-light" id="btn">Enviar</button>
+    </section>
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script>
+
+    <style>
+        p{
+            background-color: #E2FFC7;
+            padding: 15px;
+            border-radius: 15px;
+            margin:15px;
+            display: inline-block;
+        }
+        section{
+            padding: 40px;
+        }
+    </style>
+</body>
+</html>
